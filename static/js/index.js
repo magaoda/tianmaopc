@@ -182,14 +182,25 @@ $(function(){
     $(".backTop").click(function(){
         $("html").animate({scrollTop:0},200)
     })
-    $('.combobox-input').focus(function () {
-        $(this).attr('placeholder').css('color','yellow')
-    })
+    $('.inputbox').click(function () {
+        $('.word2').css('color','rgb(204, 204, 204)')
+        $('combobox-input').focus()
+      }).keydown(function () { 
+        $('.word2').css('display','none')
+       }) 
+    $('.combobox-input').blur(function () {
+        $('.word2').css('color','rgb(102,102,102)')
+        if($(this).val()==''){
+            $('.word2').css('display','block') 
+        }else{
+            $('.word2').css('display','none')
+        }
+      })
     // $('.s-combobox').blur(function () {
     //     $(this).val("")
     // })
-    $('.combobox-input').blur(function () {
-        $(this).val("")
-    })
+    // $('.combobox-input').blur(function () {
+    //     $(this).val("")
+    // })
 
 })

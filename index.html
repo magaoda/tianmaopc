@@ -10,7 +10,141 @@
     <script src="static/js/jquery-3.2.1.js"></script>
     <script src="static/js/index.js"></script>
     <link rel="stylesheet" href="static/css/index.css">
+    <link rel="stylesheet" href="less/demo.css">
 </head>
+<style>
+    @media screen and (max-width:1260px){
+        .header .headerLayout{
+            width:982px;
+        }
+        .header .headerLayout .header-extra{
+            width:982px;
+        }
+        .header .mall-search{
+            width: 410px;
+        }
+        #content ul{
+            width: 982px;
+        }
+        
+        #content .main-nav .inner-con1{
+            width: 982px;
+        }
+        #content .main-nav .inner-con1 li:nth-child(10){
+            display: none;
+        }
+        .category-con .wrap{
+            width:982px;
+       }
+       .category-con .wrap .right{
+            width:982px;
+            left: 0;
+       }
+       
+       .category-con .wrap .right .line{
+            width:982px;
+            left: 0;
+       }
+       .category-con .wrap .right .shops .imgs{
+           left: 0;
+       }
+         .main-nav .inner-con1{
+            width:982px;
+        }
+        .j_exposureCon{
+            width:982px;
+        }
+        .module-body{
+            margin-right: 7px;
+        }
+        .module-body:nth-child(6){
+            display: none;
+        }
+    
+        .activity-bg .fight{
+            width: 982px;
+            padding:34px 13px 0 15px; 
+        }
+        .activity-bg .fight .left{
+            display: none;
+        }
+        .activity-bg .fight .middle{
+            margin-right: 5px;
+        }
+       
+        .activity-bg .brand-list{
+            width:984px;
+            padding:10px 13px 0 15px; 
+        }
+        .activity-bg .brand-list li{
+            width: 121px;
+            
+        }
+        .activity-bg .brand-list li:nth-child(24),.activity-bg .brand-list li:nth-child(25),.activity-bg .brand-list li:nth-child(26),.activity-bg .brand-list li:nth-child(27),.activity-bg .brand-list li:nth-child(28),.activity-bg .brand-list li:nth-child(29){
+            display: none;
+        }
+        .activity-bg .refresh-btn{
+            right: 21px;
+        }
+        .activity-bg .floor-con{
+            width:984px;
+            padding:14px 13px 0 15px; 
+        }
+        .activity-bg .floor-con .middle-column{
+            width: 746px;
+        }
+        .activity-bg .floor-con .middle-column .grid:nth-child(2),.activity-bg .floor-con .middle-column.grid:nth-child(6){
+            display: none;
+        }
+        .activity-bg .floor-con .hot-word-con{
+            top: 10px;
+        }
+        .guess .content{
+            width:984px;
+            padding:1px 13px 0 15px; 
+        }
+        .guess .content .wonderful-item{
+            width: 187px;
+            margin-right: 11px;
+        }
+        .middle-search .content{
+            width:984px;
+        }
+        .middle-search .content .fp-iconfont-new{
+            margin-top: 8px;
+            height: 200px;
+        }
+        .middle-search .content .mallSearch{
+            width: 600px;
+        }
+        .middle-search .content .mallSearch-form{
+            width: 600px;
+            margin-left: 100px;
+        }
+        .middle-search .content .mallSearch-form .s-combobox{
+            width: 511px;
+        }
+        .mui-mbar-tabs-mask{
+            height: 0;
+        }
+        .mui-mbar-tabs-mask .mui-mbar-tab-prof,.mui-mbar-tab-asset,.mui-mbar-tab-favor,.mui-mbar-tab-foot,.mui-mbar-tab-charge,.mui-mbar-tab-top,.mui-mbar-tab-qrcode,.mui-mbar-tab-ue{
+            display: none;
+        }
+        .footer-tmallinfo{
+            width:984px;
+        }
+        .footer-otherlink{
+            width:984px;
+        }
+        .footer-copyright{
+            width:984px;
+            
+        }
+      #tmall-copyright{
+          height: 222px;
+      }
+    }
+</style>
 <body>
     <!--顶部导航栏开始-->
     <div class="site-nav">
@@ -162,8 +296,15 @@
                 <div class="header-banner"></div>
                 <div class="mall-search">
                     <form action="" class="mallSearch-form clearfix">
-                        <input type="text" class="combobox-input" placeholder="搜索 天猫 商品/品牌/店铺">
-                        <button type="button">搜索</button>
+                        <div class="inputbox">
+                            
+                            <div class="inputcon">    
+                                     <input type="text" class="combobox-input" >   
+                                     <div class="word2" id="word2">搜索 天猫 商品/品牌/店铺</div>
+                            </div>
+                            
+                         </div>
+                         <button type="button">搜索</button> 
                     </form>
                     <ul>
                         <li style="border:0"><a href="">针织衫</a></li>
@@ -2057,22 +2198,22 @@
                 </div>
                 <div class="right">
                     <a href="" class="shops" style="opacity: 1;">
-                        <img src="static/img/banner/banner1.jpg" alt="">
+                        <img src="static/img/banner/banner1.jpg" alt="" class="imgs">
                     </a>
                     <a href="" class="shops">
-                        <img src="static/img/banner/banner2.jpg" alt="">
+                        <img src="static/img/banner/banner2.jpg" alt="" class="imgs">
                     </a>
                     <a href="" class="shops">
-                        <img src="static/img/banner/banner3.jpg" alt="">
+                        <img src="static/img/banner/banner3.jpg" alt="" class="imgs">
                     </a>
                     <a href="" class="shops">
-                        <img src="static/img/banner/banner4.jpg" alt="">
+                        <img src="static/img/banner/banner4.jpg" alt="" class="imgs">
                     </a>
                     <a href="" class="shops">
-                        <img src="static/img/banner/banner5.jpg" alt="">
+                        <img src="static/img/banner/banner5.jpg" alt="" class="imgs">
                     </a>
                     <a href="" class="shops">
-                        <img src="static/img/banner/banner6.jpg" alt="">
+                        <img src="static/img/banner/banner6.jpg" alt="" class="imgs">
                     </a>
                     <ul class="line">
                         <li style="background: #fff;"></li>
@@ -2106,36 +2247,38 @@
                 </div>
             </div>
             <div class="fight">
-                <div class="left">
-                    <div class="header">
-                        <span class="cn">品牌闪购</span>
-                        <span class="en">BRAND SALE</span>
-                        <a href="" class="more"></a>
-                    </div>
-                    <a href="" class="body">
-                        <img src="static/img/flash/flash1.jpg" alt="">
-                    </a>
-                </div>
-                <div class="middle">
-                    <div class="header">
-                        <span class="cn">聚名品</span>
-                        <span class="en">LUXURY CHANNEL</span>
-                        <a href="" class="more">更多</a>
-                    </div>
-                    <a href="" class="body">
-                        <img src="static/img/flash/flash2.jpg" alt="">
-                    </a>
-                </div>
-                <div class="right">
-                    <div class="header">
-                        <span class="cn">品牌活动</span>
-                        <span class="en">BRAND ACTIVITY</span>
-                        <a href="" class="more">更多</a>
-                    </div>
-                    <a href="" class="body">
-                        <img src="static/img/flash/flash3.jpg" alt="">
-                    </a>
-                </div>
+                
+                        <div class="left">
+                                <div class="header">
+                                    <span class="cn">品牌闪购</span>
+                                    <span class="en">BRAND SALE</span>
+                                    <a href="" class="more"></a>
+                                </div>
+                                <a href="" class="body">
+                                    <img src="static/img/flash/flash1.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="middle">
+                                <div class="header">
+                                    <span class="cn">聚名品</span>
+                                    <span class="en">LUXURY CHANNEL</span>
+                                    <a href="" class="more">更多</a>
+                                </div>
+                                <a href="" class="body">
+                                    <img src="static/img/flash/flash2.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="right">
+                                <div class="header">
+                                    <span class="cn">品牌活动</span>
+                                    <span class="en">BRAND ACTIVITY</span>
+                                    <a href="" class="more">更多</a>
+                                </div>
+                                <a href="" class="body">
+                                    <img src="static/img/flash/flash3.jpg" alt="">
+                                </a>
+                            </div>
+                
             </div>
             <div class="brand-list">
                 <ul>
